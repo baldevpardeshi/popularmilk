@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
-}
+@import "bootstrap/dist/css/bootstrap.css";
+@import "https://fonts.googleapis.com/css2?family=Average&family=Libre+Franklin:wght@400;500;600;700&family=Oswald&display=swap";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* font-family: 'Average', serif;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Oswald', sans-serif; */
+/* ================Basic Css start============== */
+body {
+  font-family: "Average", serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul li {
+  list-style: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ================Navigation Css start============== */
+.nav-link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: #181516;
 }
-
-.App-link {
-  color: #61dafb;
+.nav-link:hover {
+  color: #fecf4d;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active {
+  color: #fecf4d;
+}
+.header {
+  height: 90px;
+  background-color: #ffffff;
+  box-shadow: 1px 0px 4px #cccccc;
+}
+.middle-wrapper {
+  margin-top: 90px;
+}
+.main-banner .slick-slide img {
+  width: 100%;
+}
+.main-banner .slick-prev {
+  z-index: 99;
+  left: 0;
+}
+.main-banner .slick-next {
+  right: 0;
+}
+.main-banner .slick-dots {
+  bottom: 10px;
+}
+.main-banner .slick-dots li button:before {
+  color: #ffffff;
+  font-size: 14px;
+}
+.main-banner .slick-dots li.slick-active button:before {
+  color: transparent;
+  border: 2px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+}
+/* ================Footer Css start============== */
+.footer {
+  background-color: #333;
+  color: #f0f0f0;
+  height: 60px;
 }
